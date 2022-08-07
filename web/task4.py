@@ -8,7 +8,6 @@ def main():
     selected_list = aggregator.create_q2_top_list()
 
     symbols = selected_list.keys()
-    print(symbols)
 
     spread = all_tasks.PriceSpread()
     spread.symbols = symbols

@@ -35,7 +35,6 @@ def main():
     selected_list = aggregator.create_q1_top_list()
 
     symbols = selected_list.keys()
-    print(symbols)
 
     orders_list = []
 
