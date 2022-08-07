@@ -1,0 +1,6 @@
+# This file is used by pip to install required python packages
+# Usage: pip install -r requirements.txt
+
+binance-connector==v1.15.0
+Flask~=2.2.1
+prometheus-client==0.14.1
