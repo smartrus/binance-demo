@@ -1,7 +1,7 @@
 # binance-demo
 A demo application to consume Binance API
 
-### Overview of project structure and files
+### Overview of the project structure and files
 * web/all_tasks.py - 2 classes used in the tasks to prevent code duplication and store the state
 * web/task1.py - question 1 code
 * web/task2.py - question 2 code
@@ -15,6 +15,7 @@ A demo application to consume Binance API
 ### Prerequisites
 You need to have the following installed on your local machine:
 * Docker Engine - https://docs.docker.com/engine/install/
+* Supply a list of all symbols available on Binance API to the global variable `symbols_global` in `all_tasks.py` (there are a few suplied for the sake of the demo)  
 
 ### Use the docker commands below to run the app
 Please run the commands from the project's root directory 

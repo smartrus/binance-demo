@@ -3,9 +3,8 @@ import all_tasks
 
 def main():
     aggregator = all_tasks.AggTrades()
-    # all available Binance USDT symbols must be supplied below (a few for testing)
-    aggregator.symbols = ['BTCUSDT', 'WINUSDT', 'ETHUSDT', 'BTTUSDT', 'HOTUSDT', 'BNBUSDT', 'FILUSDT', 'DOTUSDT',
-                          'XRPUSDT', 'TRXUSDT', 'BUSDUSDT', 'EOSUSDT', 'DENTUSDT']
+    # all available Binance USDT symbols must be supplied below (a few for testing from the global list in all_tasks.py)
+    aggregator.symbols = list(filter(lambda x: 'USDT' in x, all_tasks.symbols_global))
     selected_list = aggregator.create_q2_top_list()
 
     symbols = selected_list.keys()
