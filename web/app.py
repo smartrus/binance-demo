@@ -3,6 +3,7 @@ from . import all_tasks
 
 
 app = Flask(__name__)
+price_spread_dict_old_global = {}
 
 
 def price_spread():
@@ -18,10 +19,12 @@ def price_spread():
     spread.symbols = symbols
 
     while True:
+        global price_spread_dict_old_global
         delta_spread_dict = {}
         price_spread_dict = dict(spread.create_price_spread())
-        if spread.price_spread_list_old is not None:
-            price_spread_dict_old = dict(spread.price_spread_list_old)
+        if price_spread_dict_old_global is not None:
+            price_spread_dict_old = price_spread_dict_old_global
+            price_spread_dict_old_global = price_spread_dict
         else:
             price_spread_dict_old = {}
 

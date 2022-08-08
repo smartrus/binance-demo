@@ -112,11 +112,7 @@ class PriceSpread:
 
 
 def main():
-    aggregator = AggTrades()
-    aggregator.symbols = ['BTCAUD', 'BTCBIDR', 'BTCBRL', 'BTCBUSD', 'BTCEUR', 'BTCGBP', 'BTCRUB', 'BTCTRY',
-                          'BTCTUSD', 'BTCUAH', 'BTCUSDC', 'BTCUSDP', 'BTCUSDT']
-    selected_list = aggregator.create_q1_top_list()
-    print(selected_list)
+    print("Hello World!")
 
 
 if __name__ == "__main__":
