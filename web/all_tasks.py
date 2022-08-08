@@ -23,7 +23,8 @@ class AggTrades:
         initial_time = round((time.time() * 1000))
         total_trades = []
 
-        for hour in range(2):
+        # a loop to get data for 24 hours, since max is 1 hour
+        for hour in range(23):
             end_time = initial_time - hour*60*60*1000
             start_time = end_time - 60*60*1000
             trades = self.get_for_symbol_for_hour(symbol, start_time, end_time)

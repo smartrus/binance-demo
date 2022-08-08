@@ -4,6 +4,7 @@ import time
 
 def main():
     aggregator = all_tasks.AggTrades()
+    # all available Binance BTC symbols must be supplied below (a few for testing)
     aggregator.symbols = ['BTCUSDT', 'WINUSDT', 'ETHUSDT', 'BTTUSDT', 'HOTUSDT', 'BNBUSDT', 'FILUSDT', 'DOTUSDT',
                           'XRPUSDT', 'TRXUSDT', 'BUSDUSDT', 'EOSUSDT', 'DENTUSDT']
     selected_list = aggregator.create_q2_top_list()
